@@ -70,7 +70,6 @@ function App() {
     setCity(value);
   };
   const handleSearchCity = () => {
-    // console.log("onclick");
     getData(city);
   };
 
@@ -109,7 +108,7 @@ function App() {
           sx={{
             fontSize: "32px",
             fontWeight: "700",
-            color: "#555",
+            color: "#1a1662",
             marginBottom: "5px",
           }}
         >
@@ -189,7 +188,7 @@ function App() {
                   marginBottom: "10px",
                 }}
               >
-                <Icon sx={{ color: "red", marginRight: "10px" }}>
+                <Icon sx={{ color: "#ea6969", marginRight: "10px" }}>
                   <DeviceThermostatOutlinedIcon />
                 </Icon>
                 <Typography>
@@ -203,7 +202,7 @@ function App() {
                   justifyContent: "center",
                 }}
               >
-                <Icon sx={{ color: "blue", marginRight: "10px" }}>
+                <Icon sx={{ color: "#78a0d9", marginRight: "10px" }}>
                   <WindPowerIcon />
                 </Icon>
                 <Typography mr={2} component="p">
@@ -212,11 +211,11 @@ function App() {
                 </Typography>
 
                 <Typography mr={2} component="p">
-                  <span style={{ marginRight: "5px" }}>Gust :</span>
+                  <span style={{ marginRight: "5px" }}>Gust:</span>
                   {data.wind.gust || "unknown"}
                 </Typography>
                 <Typography component="p">
-                  <span style={{ marginRight: "5px" }}>Speed :</span>
+                  <span style={{ marginRight: "5px" }}>Speed:</span>
                   {data.wind.speed || "unknown"}
                 </Typography>
               </Box>
