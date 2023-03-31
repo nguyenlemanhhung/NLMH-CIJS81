@@ -130,6 +130,12 @@ function App() {
                   </IconButton>
                 </InputAdornment>
               }
+              onKeyPress={(ev) => {
+                if (ev.key === "Enter") {
+                  ev.preventDefault();
+                  handleSearchCity(ev);
+                }
+              }}
             />
           </FormControl>
         </Box>
